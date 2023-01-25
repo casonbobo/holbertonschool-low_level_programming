@@ -1,5 +1,5 @@
 /**
-* main:POOPOO
+* main - POOPOO
 * Return:PEEPEE
 *
 */
@@ -7,7 +7,6 @@
 #include <string.h>
 int main(void)
 {
-char prog[] = "with proper grammar, but the outcome is a piece of art,";
-prinf(prog);
+printf("with proper grammar, but the outcome is a piece of art,");
 return (0);
 }
