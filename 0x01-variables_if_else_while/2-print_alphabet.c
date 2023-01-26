@@ -7,12 +7,10 @@
 
 int main(void)
 {
-str arr1[] = {a, b, c, d, e, f, g, h, \\
-i, j, k, l, m, n, o, p, q, \\
-r, s, t, u, v, w, x, y, z};
-for (int i = 0; i < 25; i++)
+char c;
+for (c = 'a'; c <= 'z' ++c)
 {
-putchar("%d", arr[i]);
+putchar(c);
 }
 return (0);
 }
