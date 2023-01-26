@@ -2,7 +2,7 @@
 *main - Time to run
 *Return: Or time to turn
 */
-
+#include <stdio.h>
 int main(void)
 {
 int c;
