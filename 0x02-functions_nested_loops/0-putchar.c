@@ -5,9 +5,13 @@
 */
 #include "main.h"
 
-int first(void)
+int mychar(void)
 {
-char i[] = "_putchar";
-putchar(i);
+char mpc[] = "_putchar";
+
+for (int i = 0; mpc[i]; i++)
+_putchar(mpc[i]);
+
+_putchar('\n');
 return (0);
 }

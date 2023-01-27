@@ -2,5 +2,8 @@
 *main - GREP
 *Return:GROOP
 */
-#include <stdio.h>
-#include <string.h>
+#ifndef _PUTCHAR
+#define _PUTCHAR
+
+int _putchar(char c);
+#endif
