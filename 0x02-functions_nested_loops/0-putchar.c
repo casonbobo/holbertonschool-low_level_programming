@@ -7,11 +7,13 @@
 int main(void)
 {
 char mpc[] = "_putchar";
-int i = 0;
 
-for (i; mpc[i]; i++)
+int i;
+
+for (i = 0; mpc[i]; i++)
+{
 _putchar(mpc[i]);
-
+}
 _putchar('\n');
 return (0);
 }
