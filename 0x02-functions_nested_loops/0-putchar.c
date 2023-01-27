@@ -4,10 +4,10 @@
 *Return:What do you think about pancakes?
 */
 #include "main.h"
-#include <stdio.h>
 
-void first(void)
+int first(void)
 {
-putchar("_putchar");
-return ("0");
+char i = '_putchar';
+putchar(i);
+return (0);
 }
