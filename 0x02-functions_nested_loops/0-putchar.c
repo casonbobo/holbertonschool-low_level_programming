@@ -5,11 +5,11 @@
 */
 #include "main.h"
 
-int mychar(void)
+int main(void)
 {
 char mpc[] = "_putchar";
-
-for (int i = 0; mpc[i]; i++)
+int i = 0;
+for (i; mpc[i]; i++)
 _putchar(mpc[i]);
 
 _putchar('\n');
