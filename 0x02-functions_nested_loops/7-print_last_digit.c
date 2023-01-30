@@ -3,6 +3,7 @@
 *@r: is number
 *Return:Return is amount
 */
+#include "main.h"
 
 int print_last_digit(int r)
 {
