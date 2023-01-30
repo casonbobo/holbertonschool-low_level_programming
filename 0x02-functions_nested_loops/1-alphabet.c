@@ -1,6 +1,6 @@
 /**
-*main - MAAAAAAIIIIINNN
-*Return:What do you think about pancakes?
+*print_alphabet - What to say?
+*Return:I can count
 */
 #include "main.h"
 
