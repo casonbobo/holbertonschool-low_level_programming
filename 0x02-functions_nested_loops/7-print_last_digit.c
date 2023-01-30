@@ -1,10 +1,10 @@
 /**
 * print_last_digit - Deja Vu
-*@n: is number
+*@r: is number
 *Return:Return is amount
 */
 
-int print_last_digit(int n)
+int print_last_digit(int r)
 {
-return (n%10);
+return (r%10);
 }
