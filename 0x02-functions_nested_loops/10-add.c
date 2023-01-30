@@ -1,6 +1,7 @@
 /**
-*main - thats really weird
-*
+*add - thats really weird
+*@n1: was up dood
+*@n2: nuthn much dood
 *Return: git these cheeks
 */
 #include "main.h"
