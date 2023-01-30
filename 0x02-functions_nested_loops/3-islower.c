@@ -1,5 +1,6 @@
 /**
 *_islower - SMALL BOI
+*@c: c is a letter
 * Return: 1 or 0
 */
 
