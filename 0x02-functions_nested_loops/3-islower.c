@@ -1,5 +1,5 @@
 /**
-*islower - SMALL BOI
+*_islower - SMALL BOI
 * Return: 1 or 0
 */
 
@@ -9,11 +9,7 @@ int _islower(int c)
 {
 
 if (c >= 'a' && c <= 'z')
-{
-Return(1);
-{
+	return (1);
 else
-}
-Return(0);
-}
+	return (0);
 }
