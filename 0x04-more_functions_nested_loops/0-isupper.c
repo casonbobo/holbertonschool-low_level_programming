@@ -4,7 +4,7 @@
 *Return: 1 or 0
 */
 
-#include "main.h"
+#include "0-main.c"
 
 int _isupper(int c)
 {
