@@ -16,7 +16,7 @@ if (n > 0)
 	while (i < n)
 	{
 		_putchar(line);
-		for (c = 0; c < n; c++)
+		for (c = 0; c > n; c++)
 		{
 		_putchar(' ');
 		}
