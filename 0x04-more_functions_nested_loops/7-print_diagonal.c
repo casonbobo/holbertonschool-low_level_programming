@@ -10,16 +10,18 @@ void print_diagonal(int n)
 {
 char line = '\\';
 int i = 0;
-int c;
+int c = 0;
+
 if (n > 0)
 {
 	while (i < n)
 	{
-		_putchar(line);
-		for (c = 0; c > n; c++)
+		while (c <= i)
 		{
-		_putchar(' ');
+			_putchar(' ');
+			c++;
 		}
+		_putchar(line);
 		i++;
 		c = 0;
 		_putchar('\n');
