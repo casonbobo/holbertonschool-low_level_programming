@@ -1,16 +1,12 @@
 /**
 *mul - makes the product
 *@a: is a number secretly
-*@b wants to be a letter again
-*Return: 0
+*@b: wants to be a letter again
+*Return: product
 */
 #include "main.h"
 
 int mul(int a, int b)
 {
-int product;
-
-a *b = product;
-
-return (0);
+return (a * b);
 }
