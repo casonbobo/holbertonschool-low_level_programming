@@ -1,6 +1,6 @@
 /**
 *_isupper - Back at it
-*
+*@c: c is a letter duh
 *Return: 1 or 0
 */
 

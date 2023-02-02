@@ -7,6 +7,6 @@
 int main()
 {
  _isupper();
- return(0);
+ return (0);
 
 }
