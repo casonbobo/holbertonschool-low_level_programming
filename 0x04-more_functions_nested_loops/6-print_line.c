@@ -15,4 +15,5 @@ int i;
 	{
 		_putchar(line);
 	}
+_putchar('\n');
 }
