@@ -1,6 +1,6 @@
 /**
 *print_numbers - prints... numbers...
-*Return: 0
+*Return: nothing
 */
 
 #include "main.h"
@@ -8,10 +8,10 @@
 void print_numbers(void)
 {
 
-int i = 0;
-for (; i <= 9; i++)
+int i;
+for (i = 0; i <= 9; i++)
 	{
-	_putchar(i);
+	_putchar(i + '0');
 	}
 _putchar('\n');
 return;
