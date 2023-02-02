@@ -4,9 +4,6 @@
 */
 #include "main.h"
 
-int main()
+int main(void)
 {
- _isupper();
- return (0);
-
 }

@@ -8,5 +8,5 @@
 #define _PUTCHAR 
 
 int _putchar(char c);
-int _issupper(int c);
+int _isupper(int c);
 #endif
