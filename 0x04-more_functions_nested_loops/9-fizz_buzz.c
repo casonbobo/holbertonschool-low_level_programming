@@ -23,5 +23,6 @@ for (n = 0; n = 100; n++;)
 	else
 	{
 		printf("%d ", n);
+	}
 }
 }
