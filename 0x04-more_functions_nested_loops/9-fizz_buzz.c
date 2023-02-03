@@ -6,7 +6,9 @@
 
 void fizzbuzz(void)
 {
-for (n = 0; n = 100; n++;)
+int n;
+
+for (n = 0; n == 100; n++)
 {
 	if (n % 15 == 0)
 	{
