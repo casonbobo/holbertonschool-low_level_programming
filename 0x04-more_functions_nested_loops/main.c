@@ -3,11 +3,11 @@
 *Return: probably 0
 */
 #include "main.h"
-
 int main(void)
 {
-	    print_square(2);
-	        print_square(10);
-		    print_square(0);
-		        return (0);
+	    print_diagonal(0);
+	        print_diagonal(2);
+		    print_diagonal(10);
+		        print_diagonal(-4);
+			    return (0);
 }

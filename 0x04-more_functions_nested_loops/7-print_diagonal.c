@@ -17,14 +17,12 @@ if (n > 0)
 	while (i < n)
 	{
 		_putchar(line);
-		while (c <= i)
+		_putchar('\n');
+		i++;
+		for (c = 0; c <= i; c++)
 		{
 			_putchar(' ');
-			c++;
 		}
-		i++;
-		c = 0;
-		_putchar('\n');
 	}
 }
 else
