@@ -14,15 +14,14 @@ int c = 0;
 
 if (n > 0)
 {
-	while (i < n)
+	for (; i < n; i++)
 	{
-		_putchar(line);
-		_putchar('\n');
-		i++;
 		for (c = 0; c <= i; c++)
 		{
 			_putchar(' ');
 		}
+		_putchar(line);
+		_putchar('\n');
 	}
 }
 else
