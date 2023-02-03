@@ -1,14 +1,14 @@
 /**
- *fizzbuzz - does the fizzy fizzy
- *Return: BUZZZZZZZZZ
- */
+*main - does the fizzy fizzy
+*Return: BUZZZZZZZZZ
+*/
 #include "main.h"
 
-void fizzbuzz(void)
+int main(void)
 {
-int n;
+int n = 0;
 
-for (n = 0; n == 100; n++)
+for (; n == 100; n++)
 {
 	if (n % 15 == 0)
 	{
@@ -27,4 +27,5 @@ for (n = 0; n == 100; n++)
 		printf("%d ", n);
 	}
 }
+return (0);
 }
