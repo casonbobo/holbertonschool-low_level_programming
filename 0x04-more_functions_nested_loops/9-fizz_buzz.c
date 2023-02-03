@@ -2,13 +2,13 @@
 *main - does the fizzy fizzy
 *Return: BUZZZZZZZZZ
 */
-#include "main.h"
+#include <stdio.h>
 
 int main(void)
 {
 int n = 0;
 
-for (; n == 100; n++)
+for (; n <= 100; n++)
 {
 	if (n % 15 == 0)
 	{
@@ -27,5 +27,6 @@ for (; n == 100; n++)
 		printf("%d ", n);
 	}
 }
+printf("\n");
 return (0);
 }
