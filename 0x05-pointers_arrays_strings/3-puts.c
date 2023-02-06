@@ -7,8 +7,5 @@
 
 void _puts(char *str)
 {
-	for (int x = 0; *str[i]; i++)
-	{
-		*str[i];
-	}
+	printf("%d \n", *str);
 }
