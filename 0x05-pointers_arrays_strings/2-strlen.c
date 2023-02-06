@@ -2,7 +2,7 @@
 #include <stdio.h>
 /**
  *_strlen - Length of string
- *@s = is a character
+ *@s: is a character
  *Return: Does something
  */
 
