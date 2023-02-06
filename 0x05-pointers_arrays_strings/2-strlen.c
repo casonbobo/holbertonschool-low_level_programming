@@ -8,7 +8,9 @@
 
 int _strlen(char *s)
 {
-int i = *s;
-printf("%d\n", i);
-return (0);
+int i = 0;
+
+while (s[i] != '\0')
+	len++;
+return (s);
 }
