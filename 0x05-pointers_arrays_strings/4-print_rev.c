@@ -16,8 +16,9 @@ int length = 0;
 		i++;
 	}
 	i = length;
-	for (length -= 1; s[length]; length--)
+	for (length -= 1; length >= 0; length--)
 	{
 		putchar(s[length]);
 	}
+putchar('\n');
 }
