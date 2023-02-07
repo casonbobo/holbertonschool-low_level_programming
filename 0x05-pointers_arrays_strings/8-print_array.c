@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 /**
  *print_array - whats an array?
  *@a: oh you mean...

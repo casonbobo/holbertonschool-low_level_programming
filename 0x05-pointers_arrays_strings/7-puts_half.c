@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 /**
  *puts_half - only half the body
  *@str: another one?
@@ -27,5 +28,5 @@ void puts_half(char *str)
 			putchar(str[n + 1]);
 		}
 	}
-	_putchar('\n');
+	putchar('\n');
 }

@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 /**
  *puts2 - puts strikes back
  *@str: dingle dangle
