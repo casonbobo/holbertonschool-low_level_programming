@@ -1,9 +1,9 @@
 #include "main.h"
 /**
- *rev_string - yuuuuu
- *@s: a letter i guess
- *Return: something dumb
- */
+* rev_string - yuuuuu
+* @s: a letter i guess
+* Return: something dumb
+*/
 
 void rev_string(char *s)
 {
