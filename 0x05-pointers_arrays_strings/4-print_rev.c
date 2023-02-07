@@ -18,7 +18,7 @@ int length = 0;
 	i = length;
 	for (length -= 1; length >= 0; length--)
 	{
-		_putchar(s[length]);
+		putchar(s[length]);
 	}
-_putchar('\n');
+putchar('\n');
 }
