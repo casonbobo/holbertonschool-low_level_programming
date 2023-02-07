@@ -10,15 +10,16 @@ void print_rev(char *s)
 {
 int i = 0;
 int length = 0;
+int n;
 
 	while (s[i] != '\0')
 	{
 		i++;
 	}
 	i = length;
-	for (length -= 1; length >= 0; length--)
+	for (n = length - 1; n >= 0; n--)
 	{
-		putchar(s[length]);
+		putchar(s[n]);
 	}
 putchar('\n');
 }
