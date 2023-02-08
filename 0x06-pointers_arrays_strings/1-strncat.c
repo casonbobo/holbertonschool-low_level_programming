@@ -22,6 +22,8 @@ char *_strncat(char *dest, char *src, int n)
 	}
 	while (src[c] <= n)
 	{
+		if (src[c] == NULL)
+			break;
 		c++;
 		o++;
 	}
