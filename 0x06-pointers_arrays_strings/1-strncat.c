@@ -29,11 +29,10 @@ char *_strncat(char *dest, char *src, int n)
 	}
 	while (srclen <= index)
 	{
-		dest[destlen] = src[index2];
+		dest[destlen] = src[];
 		srclen++;
-		index2++;
 	}
 	if (src[n] >= src[srclen])
-		dest[index2] = '\0';
+		dest[index] = '\0';
 	return (dest);
 }
