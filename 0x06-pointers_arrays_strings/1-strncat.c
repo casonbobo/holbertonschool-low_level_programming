@@ -22,7 +22,7 @@ char *_strncat(char *dest, char *src, int n)
 	}
 	while (src[c] <= n)
 	{
-		if (src[c] == NULL)
+		if (src[c] == '\0')
 			break;
 		c++;
 		o++;
@@ -33,6 +33,8 @@ char *_strncat(char *dest, char *src, int n)
 		i++;
 		f++;
 	}
+	if (src[n] <= src[c])
+		return (dest);
 	dest[i] = '\0';
 	return (dest);
 }
