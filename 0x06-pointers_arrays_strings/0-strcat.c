@@ -1,5 +1,5 @@
 #include "holberton.h"
-#include <string.h>
+#include <stdio.h>
 /**
  **_strcat - the straight cat
  *@dest: is destination
@@ -9,10 +9,10 @@
 
 char *_strcat(char *dest, char *src)
 {
-	int i = 0;
+	int i;
 	int destlen = 0;
 
-	while (dest[i] != 0)
+	while (dest[destlen] != 0)
 	{
 		destlen++;
 	}
