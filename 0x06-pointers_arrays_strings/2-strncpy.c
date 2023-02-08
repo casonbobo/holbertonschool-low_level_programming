@@ -2,14 +2,14 @@
 #include <string.h>
 #include <stdio.h>
 /**
- *_strcpy - the straight copy
+ *_strncpy - the straight copy
  *@dest: is destination
  *@src: is something else
  *@n: is a number
  *Return: peepee poopoo
  */
 
-char *_strcpy(char *dest, char *src, int n)
+char *_strncpy(char *dest, char *src, int n)
 {
 	int index = 0;
 
