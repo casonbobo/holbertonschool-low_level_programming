@@ -13,7 +13,8 @@ char *_strncat(char *dest, char *src, int n)
 	int destlen = 0;
 	int index = 0;
 	while (dest[index++])
-		destlen++
+		destlen++;
 	for (index = 0; src[index] && index < n; index++)
 		dest[destlen++] = src[index];
 	return (dest);
+}
