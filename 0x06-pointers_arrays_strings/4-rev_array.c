@@ -15,5 +15,4 @@ void reverse_array(int *a, int n)
 
 	for (; index > 0; index--)
 		a[counter++] = a[index];
-	a[counter + 1] = '\0';
 }
