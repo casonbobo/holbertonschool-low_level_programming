@@ -5,13 +5,14 @@
  *@n: nnnnnnnn
  *Return: nuthin
  */
-void reverse_array(int *a, int n);
+void reverse_array(int *a, int n)
 {
 	int index = 0;
+	int counter = 0;
 
 	while (index < n)
 		index++;
 
 	for (; index > 0; index--)
-		a[] = a[index];
+		a[counter++] = a[index];
 }
