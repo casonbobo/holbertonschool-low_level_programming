@@ -1,8 +1,7 @@
 #include "holberton.h"
-#include <string.h>
 #include <stdio.h>
 /**
- *_strncpy - the straight copy
+ * *_strncpy - the straight copy
  *@dest: is destination
  *@src: is something else
  *@n: is a number
@@ -13,8 +12,9 @@ char *_strncpy(char *dest, char *src, int n)
 {
 	int index = 0;
 
-	for (; src[index] && index < n; index++)
-		dest[index++] = src[index];
-	_putchar('\0');
+	for (; src[index] != '\0' && index < n ; index++)
+	{
+		dest[index] = src[index];
+	}
 	return (dest);
 }
