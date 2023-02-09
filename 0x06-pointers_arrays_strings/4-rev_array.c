@@ -5,7 +5,7 @@
  *@n: nnnnnnnn
  *Return: nuthin
  */
-oid reverse_array(int *a, int n)
+void reverse_array(int *a, int n)
 {
 	int temp;
 	int index;
