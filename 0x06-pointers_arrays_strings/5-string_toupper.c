@@ -1,6 +1,6 @@
 #include "holberton.h"
 /**
- *string_toupper - toooooo upper and beyond
+ * *string_toupper - toooooo upper and beyond
  *@str: spooder man
  *Return: also stringyyy
  */
