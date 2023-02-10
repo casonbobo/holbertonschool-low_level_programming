@@ -1,6 +1,7 @@
 #include "holberton.h"
 /**
  *cap_string - capitalize peepee poopoo
+ *@str: is this a string
  *Return: just a character
  */
 
