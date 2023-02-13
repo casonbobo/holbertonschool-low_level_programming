@@ -12,7 +12,7 @@ char *_strchr(char *s, char c)
 	int count = 0;
 
 	for (; s[count]; count++)
-	{:wq
+	{
 		if (s[count] == c)
 			return (s + count);
 	}
