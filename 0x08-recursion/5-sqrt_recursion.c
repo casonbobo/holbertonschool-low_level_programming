@@ -19,10 +19,10 @@ int _sqrt(int n, int c)
 {
 	int sqt = c * c;
 
-	if (sqt > 0)
+	if (sqt < 0)
 		return (-1);
 
-	if ( sqt == n)
+	if (sqt == n)
 		return (c);
 
 	return (_sqrt(n, c + 1));
