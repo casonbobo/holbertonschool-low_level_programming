@@ -13,6 +13,7 @@ int _sqrt_recursion(int n)
 /**
  *_sqrt - this is dumb that i need to do it this way
  *@n: please come over here
+ *@c: please please dear God
  *Return: please anything God
  */
 int _sqrt(int n, int c)
