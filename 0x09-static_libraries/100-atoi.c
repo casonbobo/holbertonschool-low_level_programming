@@ -1,4 +1,12 @@
 //I never did this. It is for my static library
-//
-//
-int _atoi(char *s);
+#include "main.h"
+
+/**
+ *_atoi - **nothing**
+ *@s: snakey snake
+ *Return: peepee poopoo
+ */
+int _atoi(char *s)
+{
+return (0);
+}
