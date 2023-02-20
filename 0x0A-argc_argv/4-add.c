@@ -1,11 +1,16 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "main.h"
-
+/**
+ *main - main
+ *@argc: get what
+ *@argv: get vertical
+ *Return: mememememmem
+ */
 int main(int argc, char *argv[])
 {
 	int n1, n2, sum = 0;
-		for (n1 = 1; 1 < argc; i++)
+		for (n1 = 1; n1 < argc; i++)
 		{
 			for (d = 0; argv[n1][n2]; n2++)
 			{
