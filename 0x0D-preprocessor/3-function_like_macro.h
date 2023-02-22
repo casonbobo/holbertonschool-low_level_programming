@@ -1,4 +1,5 @@
 #ifndef _HEADER_
 #define _HEADER_
-#define abs(x)
+#include <stdio.h>
+#define int abs(int x)
 #endif
