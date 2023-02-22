@@ -1,4 +1,4 @@
-#include "main.h"
+#include "holberton.h"
 /**
  *_strcmp - compare compare compare
  *@s1: s ooooone

@@ -1,4 +1,4 @@
-#include "main.h"
+#include "holberton.h"
 #include <string.h>
 /**
  *_strncat - the straight cat
