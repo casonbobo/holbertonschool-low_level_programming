@@ -7,12 +7,12 @@
 
 void *malloc_checked(unsigned int b)
 {
-	int index;
-	char alloc[];
+	void *alloc = malloc(b);
 
-	for (; index < b; index++)
+	if (alloc == NULL)
 	{
-		alloc[index] = malloc(sizeof(int));
+		free(alloc);
+		exit(98);
 	}
 	return (alloc);
 }
