@@ -23,6 +23,6 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		o[index1] = s1[index1];
 	for (index2 = 0; s2[index2] && index2 <= n; index2++, index1++)
 		o[index1] = s2[index2];
-
+	o[index1] = '\0';
 	return (o);
 }
