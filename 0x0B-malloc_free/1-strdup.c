@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- *strdup - duplicate or something
+ *_strdup - duplicate or something
  *@str: string around
  *Return: probably something, but it could be nothing
  */
