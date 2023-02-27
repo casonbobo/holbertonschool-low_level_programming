@@ -19,13 +19,13 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	if (s2 == NULL)
 		s2 = "";
 	while (s1[s1Len])
-		s1Len++;	
+		s1Len++;
 	s2Len = n;
 
 	bufferLen = s1Len + s2Len;
 
 	pointer = malloc(sizeof(char) * (bufferLen + 1));
-	
+
 	if (pointer == NULL)
 		return (NULL);
 
