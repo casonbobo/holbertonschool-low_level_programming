@@ -11,7 +11,7 @@
  *Return: 0
  */
 
-struct Dog
+typedef struct Dog
 {
 	char *name;
 	float age;
@@ -25,7 +25,5 @@ struct Dog
 int main(void)
 {
 	struct Dog my_dog;
-
-	return (0);
 }
 #endif
