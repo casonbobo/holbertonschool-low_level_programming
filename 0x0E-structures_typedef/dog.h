@@ -26,10 +26,6 @@ int main(void)
 {
 	struct Dog my_dog;
 
-	my_dog.name = "Poppy";
-	my_dog.age = 3.5;
-	my_dog.owner = "Bob";
-
 	return (0);
 }
 #endif
