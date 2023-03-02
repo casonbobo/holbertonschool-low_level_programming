@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print_name - print my name
+ *print_name - print my name
  *@name: my name is
  *@f: fffffff (flip flop)
  *Return: nothing
