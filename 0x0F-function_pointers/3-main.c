@@ -14,7 +14,7 @@ int main(int argc, char *argv[])
 	a = atoi(argv[1]);
 	b = atoi(argv[3]);
 
-	if (argc != 4)
+	if (argc >= 5 || argc <= 3)
 	{
 		printf("Error\n");
 		exit(98);
