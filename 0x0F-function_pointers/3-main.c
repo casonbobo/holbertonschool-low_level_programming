@@ -38,7 +38,7 @@ int main(int argc, char *argv[])
 	}
 
 	a = atoi(argv[1]);
-        b = atoi(argv[3]);
+	b = atoi(argv[3]);
 
 	printf("%d\n", operator(a, b));
 	return (0);
