@@ -1,4 +1,5 @@
 #include "function_pointers.h"
+
 /**
  *array_iterator - count Mr. Array over here
  *@array: you're supposed to be in here
@@ -9,7 +10,7 @@
 
 void array_iterator(int *array, size_t size, void (*action)(int))
 {
-	int i;
+	unsigned int i;
 
 	if (array && action)
 	{
