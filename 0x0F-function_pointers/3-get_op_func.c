@@ -1,4 +1,5 @@
 #include "3-calc.h"
+#include <string.h>
 /**
  *get_op_func - get this
  *@s: commere pointer
@@ -17,10 +18,10 @@ int (*get_op_func(char *s))(int, int)
 	};
 	int i = 0;
 
-	if (s[0] != 1)
+	if (strlen(s) != 1)
 		return (NULL);
 
-	while (s[0] != ops->op[i])
+	while (s[0] != ops[i].op[0])
 		i++;
 
 	return (ops[i].f);
