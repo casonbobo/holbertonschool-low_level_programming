@@ -17,11 +17,11 @@ int (*get_op_func(char *s))(int, int)
 	};
 	int i = 0;
 
-	if (s != 1)
+	if (s[0] != 1)
 		return (NULL);
 
-	while (s != ops[i])
+	while (s[0] != ops->op[i])
 		i++;
 
-	return (ops[i + 1]);
+	return (ops[i].f);
 }
