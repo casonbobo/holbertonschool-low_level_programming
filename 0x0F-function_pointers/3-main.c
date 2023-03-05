@@ -30,7 +30,7 @@ int main(int argc, char *argv[])
 		exit(99);
 	}
 
-	if ((strcmp(op, "/") == 0 || (strcmp(op, "%")) == 0) && (b == 0))
+	if ((strcmp(op, "/") == 0 || (strcmp(op, "%")) == 0) && b == 0)
 	{
 		printf("Error\n");
 		exit(100);
