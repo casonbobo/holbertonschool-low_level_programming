@@ -24,13 +24,13 @@ int main(int argc, char *argv[])
 	op = argv[2];
 	operator = get_op_func(op);
 
-	if (op == NULL)
+	if (operator == NULL)
 	{
 		printf("Error99\n");
 		exit(99);
 	}
 
-	if ((strcmp(op, "/") == 0 || (strcmp(op, "%") == 0)) && (b == 0))
+	if ((strcmp(op, "/") == 0 || (strcmp(op, "%")) == 0) && (b == 0))
 	{
 		printf("Error100\n");
 		exit(100);
