@@ -12,14 +12,14 @@ int main(int argc, char *argv[])
 	char *op;
 	int (*operator)(int, int);
 	
-	a = atoi(argv[1]);
-	b = atoi(argv[3]);
-
 	if (argc != 4)
 	{
 		printf("Error\n");
 		exit(98);
 	}
+
+	a = atoi(argv[1]);
+	b = atoi(argv[3]);
 
 	op = argv[2];
 	operator = get_op_func(op);
