@@ -9,28 +9,30 @@
 int main(int argc, char *argv[])
 {
 	int a, b;
+	char *op;
 	int (*operator)(int, int);
 	
 	a = atoi(argv[1]);
 	b = atoi(argv[3]);
 
-	if (argc >= 5 || argc <= 3)
+	if (argc != 4)
 	{
-		printf("Error\n");
+		printf("Error98\n");
 		exit(98);
 	}
 
-	if (argv[2] == NULL)
+	op = argv[2];
+	operator = get_op_func(op);
+
+	if (argv[2][1])
 	{
-		printf("Error\n");
+		printf("Error99\n");
 		exit(99);
 	}
 
-	operator = get_op_func(argv[2]);
-
-	if ((*argv[2] == '/' || '%') && (b == 0))
+	if ((strcmp(op, "/") == 0 || (strcmp(op, "%") == 0)) && (b == 0))
 	{
-		printf("Error\n");
+		printf("Error100\n");
 		exit(100);
 	}
 
