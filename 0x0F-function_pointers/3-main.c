@@ -9,7 +9,7 @@
 int main(int argc, char *argv[])
 {
 	int a, b;
-	char *op;
+	char *tator;
 	int (*operator)(int, int);
 
 	if (argc != 4)
@@ -21,8 +21,8 @@ int main(int argc, char *argv[])
 	a = atoi(argv[1]);
 	b = atoi(argv[3]);
 
-	op = argv[2];
-	operator = get_op_func(op);
+	tator = argv[2];
+	operator = get_op_func(tator);
 
 	if (operator == NULL)
 	{
@@ -30,7 +30,7 @@ int main(int argc, char *argv[])
 		exit(99);
 	}
 
-	if ((strcmp(op, "/") == 0 || (strcmp(op, "%")) == 0) && b == 0)
+	if ((strcmp(tator, "/") == 0 || (strcmp(tator, "%")) == 0) && b == 0)
 	{
 		printf("Error\n");
 		exit(100);
