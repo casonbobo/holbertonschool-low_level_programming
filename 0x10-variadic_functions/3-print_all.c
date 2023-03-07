@@ -1,4 +1,5 @@
 #include "variadic_functions.h"
+#include <stdarg.h>
 /**
  *print_all - copy and paste and copy and paste and copy and paste ...
  *@format: format this dummy
@@ -8,8 +9,8 @@
 void print_all(const char * const format, ...)
 {
 	int i = 0, n = 0;
-	char *sep[] = ", ";
-
+	char *sep = ", ", *string, c;
+	float f;
 	va_list arglist;
 
 	va_start(arglist, format);
@@ -32,11 +33,11 @@ void print_all(const char * const format, ...)
 				printf("%d%s", i, sep);
 				break;
 			case 'f':
-				f = va_arg(arg_list, double);
-				printf("%f%s", f, sep)
+				f = va_arg(arglist, double);
+				printf("%f%s", f, sep);
 					break;
 			case 's':
-				string = va_arg(arglist, char *)
+				string = va_arg(arglist, char *);
 				if (string == NULL)
 					string = "(nil)";
 				printf("%s%s", string, sep);
