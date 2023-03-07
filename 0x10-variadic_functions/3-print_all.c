@@ -26,7 +26,7 @@ void print_all(const char * const format, ...)
 		{
 			case 'c':
 				c = (char) va_arg(arglist, int);
-				printf("%d%s", c, sep);
+				printf("%c%s", c, sep);
 				break;
 			case 'i':
 				i = va_arg(arglist, int);
@@ -35,7 +35,7 @@ void print_all(const char * const format, ...)
 			case 'f':
 				f = va_arg(arglist, double);
 				printf("%f%s", f, sep);
-					break;
+				break;
 			case 's':
 				string = va_arg(arglist, char *);
 				if (string == NULL)
