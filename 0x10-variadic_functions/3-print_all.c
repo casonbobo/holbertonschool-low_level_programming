@@ -8,7 +8,7 @@
 
 void print_all(const char * const format, ...)
 {
-	int i = 0, n = 0;
+	int i, n = 0, count = 0;
 	char *sep = ", ", *string, c;
 	float f;
 	va_list arglist;
@@ -17,12 +17,12 @@ void print_all(const char * const format, ...)
 
 	while (format && format[n])
 		n++;
-	while (format && format[i])
+	while (format && format[count])
 	{
-		if (i == n - 1)
+		if (count == n - 1)
 			sep = "";
 
-		switch (format[i])
+		switch (format[count])
 		{
 			case 'c':
 				c = (char) va_arg(arglist, int);
@@ -43,7 +43,7 @@ void print_all(const char * const format, ...)
 				printf("%s%s", string, sep);
 				break;
 		}
-		i++;
+		count++;
 	}
 	va_end(arglist);
 	printf("\n");
