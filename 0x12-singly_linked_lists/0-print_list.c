@@ -7,13 +7,13 @@
 size_t print_list(const list_t *h)
 {
 	int count = 0;
-	const list_t *car = h
+	const list_t *car = h;
 while (car)
 	{
 	if (car == NULL)
 		printf("[0] (nil)\n");
 	else
-		printf("%d", car->str);
+		printf("%s", car->str);
 	count++;
 	car = car->next;
 	}
