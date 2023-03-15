@@ -14,7 +14,7 @@ const list_t *car = h;
 while (car)
 {
 	count++;
-	car = car->next
+	car = car->next;
 }
 	return (count);
 }
