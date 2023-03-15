@@ -21,7 +21,10 @@ list_t *temp = *head;
 	newNode->len = strlen(str);
 	newNode->next = NULL;
 	if (*head == NULL)
+	{
 		*head = newNode;
+		return (newNode);
+	}
 
 	while (temp->next)
 		temp = temp->next;
