@@ -13,7 +13,7 @@ while (car)
 	if (car == NULL)
 		printf("[0] (nil)\n");
 	else
-		printf("[%d] %s", car-> len, car->str);
+		printf("[%d] %s", car->len, car->str);
 	count++;
 	car = car->next;
 	}
