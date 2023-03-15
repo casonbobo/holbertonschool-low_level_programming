@@ -1,4 +1,4 @@
-#include "main.h"
+#include "lists.h"
 /**
  *print_list - prints the list
  *@h: is an h
@@ -13,7 +13,7 @@ while (car)
 	if (car == NULL)
 		printf("[0] (nil)\n");
 	else
-		printf("%d", car->data);
+		printf("%d", car->str);
 	count++;
 	car = car->next;
 	}
