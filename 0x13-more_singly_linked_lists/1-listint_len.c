@@ -9,10 +9,10 @@ size_t listint_len(const listint_t *h)
 	const listint_t *car = h;
 	int count = 0;
 
-	while (temp)
+	while (car)
 	{
 		count++;
-		temp = temp->next;
+		car = car->next;
 	}
 	return (count);
 }
