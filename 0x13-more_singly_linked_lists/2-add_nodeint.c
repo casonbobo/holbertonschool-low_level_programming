@@ -8,8 +8,8 @@
 
 listint_t *add_nodeint(listint_t **head, const int n)
 {
-	list_t *newNode = malloc(sizeof(list_t));
-	list_t *tempCycle = *head;
+	listint_t *newNode = malloc(sizeof(listint_t));
+	listint_t *tempCycle = *head;
 
 	if (!newNode)
 	{
