@@ -12,12 +12,9 @@ size_t print_listint(const listint_t *h)
 
 	while (car)
 	{
-		if (!(car->n))
-			printf("NULL");
-		else
-			printf("%d", car->n);
-		count++;
+		printf("%d", car->n);
 		car = car->next;
+		count++;
 	}
 	return (count);
 }
