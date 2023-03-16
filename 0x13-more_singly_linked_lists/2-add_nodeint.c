@@ -1,6 +1,6 @@
 #include "lists.h"
 /**
- *add_nodeint - adding notes and numbers
+ *add_nodeint - adding and counting has been my day job since birth
  *@head: header
  *@n: is an n
  *Return: the address or the NULL
@@ -9,6 +9,7 @@
 listint_t *add_nodeint(listint_t **head, const int n)
 {
 	list_t *newNode = malloc(sizeof(list_t));
+	list_t *tempCycle = *head;
 
 	if (!newNode)
 	{
@@ -16,10 +17,9 @@ listint_t *add_nodeint(listint_t **head, const int n)
 		return (NULL);
 	}
 
-	newNode->next = *head;
-	(*head)->n =  strdup(n);
-	(*head)->len = strlen(n);
-	(*head)->next = newNode->next;
+	newNode->n = n;
+	newNode->next = tempCycle;
+	*head = newNode;
 
-	return (*head);
+	return (newNode);
 }
