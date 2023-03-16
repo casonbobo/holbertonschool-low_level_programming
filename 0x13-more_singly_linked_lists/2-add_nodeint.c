@@ -6,7 +6,7 @@
  *Return: the address or the NULL
  */
 
-listint_t *add_nodeint(listint_t **head, consst int n)
+listint_t *add_nodeint(listint_t **head, const int n)
 {
 	list_t *newNode = malloc(sizeof(list_t));
 
