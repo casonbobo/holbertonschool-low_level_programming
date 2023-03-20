@@ -8,8 +8,8 @@
 
 unsigned int binary_to_uint(const char *b)
 {
-	int index = 0;
-	int dec_value;
+	int index;
+	unsigned int dec_value = 0;
 
 	if (b == NULL)
 		return (0);
@@ -22,7 +22,7 @@ unsigned int binary_to_uint(const char *b)
 		}
 		else if (b[index] == '0')
 		{
-			dec_value = dec_value;
+			dec_value = dec_value * 2;
 		}
 		else
 		{
