@@ -1,7 +1,7 @@
 #include "lists.h"
 /**
- *
- *
+ *print_dlistint_backward - i cant sprint backward
+ *@h: is a potato but wants to be a lettuce
  *Return: nothing please god
  */
 size_t print_dlistint_backward(const dlistint_t *h)
