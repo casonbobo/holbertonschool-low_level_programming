@@ -8,36 +8,28 @@
 
 int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 {
-	unsigned int i = 0;
-	dlistint_t *temp = *head;
-	dlistint_t *node_to_delete;
+    dlistint_t *temp = *head;
+    unsigned int i;
 
-	if (*head == NULL)
-		return (-1);
+    if (*head == NULL)
+        return (-1);
 
-	if (index == 0)
-	{
-		node_to_delete = *head;
-		*head = (*head)->next;
-		free(node_to_delete);
-		return (1);
-	}
+    for (i = 0; temp != NULL && i < index; i++)
+        temp = temp->next;
 
-	while (temp && index != 0)
-	{
-		if (i == index - 1)
-			break;
-		temp = temp->next;
-		i++;
-	}
+    if (temp == NULL)
+        return (-1);
 
-	if (!temp)
-		return (-1);
+    if (*head == temp)
+        *head = temp->next;
 
-	node_to_delete = temp->next;
-	temp->next = node_to_delete->next;
-	if (node_to_delete->next)
-		node_to_delete->next->prev = temp;
-	free(node_to_delete);
-	return (1);
+    if (temp->next != NULL)
+        temp->next->prev = temp->prev;
+
+    if (temp->prev != NULL)
+        temp->prev->next = temp->next;
+
+    free(temp);
+
+    return (1);
 }
