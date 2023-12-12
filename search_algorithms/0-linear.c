@@ -9,10 +9,13 @@
 */
 
 int linear_search(int *array, size_t size, int value) {
-   for (int i = 0; i < size; i++) {
+   size_t i;
+
+   for (i = 0; i < size; i++) 
+   {
        if (array[i] == value) {
-           return value;
+           return (i);
        }
    }
-   return -1;
+   return (-1);
 }
