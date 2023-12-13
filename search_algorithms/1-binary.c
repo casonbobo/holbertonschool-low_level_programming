@@ -5,6 +5,28 @@
 /**
 * binary_search - a search involving numbers
 *
-* Return - the outcome of the search
+* @array: the array
+* @size: the size of the array
+* @value: the value we are looking for
+*
+* Return: the outcome of the search
 */
 
+int binary_search(int *array, size_t size, int value)
+{
+	int l = 0;
+	int r = size - 1;
+
+	while (l <= r)
+	{
+		int mid = l + (r - 1) / 2;
+
+		if (array[mid] == value)
+			return mid;
+
+		if (array[mid] < value)
+			l = mid + 1;
+		else
+			r = mid - 1;
+	}
+}
