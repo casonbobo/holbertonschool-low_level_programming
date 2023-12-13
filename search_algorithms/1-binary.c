@@ -17,6 +17,14 @@ int binary_search(int *array, size_t size, int value)
 	int l = 0;
 	int r = size - 1;
 
+	printf("Searching in array: ");
+
+	for (i = l; i < r; i++)
+		printf("%d, ", array[i]);
+
+	printf("%d", array[i]);
+	printf("\n");
+
 	while (l <= r)
 	{
 		int mid = l + (r - 1) / 2;
